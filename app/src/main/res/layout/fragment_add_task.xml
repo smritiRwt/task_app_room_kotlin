@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.AddTaskFragment">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:inputType="text"
+        android:layout_margin="15dp"
+        android:hint="@string/Entertitle"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_margin="15dp"
+        android:id="@+id/task"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:hint="@string/entertask"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     android:layout_below="@+id/task"
+        android:layout_alignParentRight="true"
+             android:layout_margin="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_baseline_check_24"
+        android:tint="@color/white"
+        android:contentDescription="TODO" />
+</RelativeLayout>
